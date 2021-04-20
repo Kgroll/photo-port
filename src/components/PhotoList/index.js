@@ -102,12 +102,13 @@ const [photos] = useState([
 ]);
 
     const currentPhotos = photos.filter((photo) => photo.category === category);
+
     return (
         <div>
         <div className="flex-row">
             {currentPhotos.map((image, i) => (
                 <img
-                    src={require(`../../assets/small/${category}/${i}.jpg`)}
+                    src={require(`../../assets/small/${category}/${i}.jpg`).default}
                     alt={image.name}
                     className="img-thumbnail mx-1"
                     key={image.name}
@@ -117,4 +118,5 @@ const [photos] = useState([
     </div >
     );
 };
+
 export default PhotoList;
