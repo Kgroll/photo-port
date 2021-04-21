@@ -20,10 +20,12 @@ describe('Nav component', () => {
           categories={categories}
           setCurrentCategory={mockSetCurrentCategory}
           currentCategory={mockCurrentCategory}
+          contactSelected={mockContactSelected}
+          setContactSelected={mockSetContactSelected}
         />);
-    });
+    })
     // snapshot test
-    it('matches snapshot', () => {
+    it('matches snapshot DOM node structure', () => {
         const { asFragment } = render(<Nav
           categories={categories}
           setCurrentCategory={mockSetCurrentCategory}
