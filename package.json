@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Kgroll.github.io/photo-port",
   "name": "photo-port",
+  "homepage": "http://Kgroll.github.io/photo-port",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
